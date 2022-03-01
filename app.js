@@ -23,6 +23,14 @@ tl.fromTo(
 );
 tl.fromTo(".text", { x: 50, opacity: 0 }, { x: 0, opacity: 1 }, "<");
 
+// Cookie Jump
+tl.fromTo(
+  ".cookie",
+  { y: 0, rotation: "0deg" },
+  { y: 10, rotation: "-20deg", yoyo: true, repeat: -1 }
+);
+tl.fromTo("#crumbs", { y: 0 }, { y: -10, yoyo: true, repeat: -1 }, "<");
+
 const button = document.querySelector("button");
 const cookieContainer = document.querySelector(".cookie-container");
 
