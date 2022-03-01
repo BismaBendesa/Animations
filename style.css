@@ -19,6 +19,10 @@
   align-items: center;
   padding: 2rem 1.5rem;
 }
+.cookie{
+  transform: scale(0.8);
+  overflow: visible;
+}
 
 .text{
   width: 60%;
