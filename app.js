@@ -22,3 +22,12 @@ tl.fromTo(
   "<50%"
 );
 tl.fromTo(".text", { x: 50, opacity: 0 }, { x: 0, opacity: 1 }, "<");
+
+const button = document.querySelector("button");
+const cookieContainer = document.querySelector(".cookie-container");
+
+// Fading cookie container
+button.addEventListener("click", async () => {
+  await gsap.to(".cookie-container", { opacity: 0, y: 30, duration: 1 });
+  cookieContainer.style.display = "none";
+});
